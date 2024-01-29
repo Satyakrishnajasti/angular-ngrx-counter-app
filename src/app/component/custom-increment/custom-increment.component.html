@@ -1,0 +1,22 @@
+<!-- <h2 class="text-center mt-3">{{ channelName }}</h2>
+<h2 class="text-center mt-3">Counter is: {{ counterDisplay }}</h2> -->
+<div class="d-flex justify-content-center">
+  <mat-form-field>
+    <mat-label>Input</mat-label>
+    <input matInput [(ngModel)]="counterIncrement" />
+  </mat-form-field>
+</div>
+<div class="d-flex justify-content-center">
+  <mat-form-field>
+    <mat-label>Select an option</mat-label>
+    <mat-select [(ngModel)]="actionType">
+      <mat-option value="add">Add</mat-option>
+      <mat-option value="remove">Remove</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="d-flex justify-content-center">
+  <button mat-raised-button color="primary" (click)="OnIncrement()">
+    Custom Increment
+  </button>
+</div>
