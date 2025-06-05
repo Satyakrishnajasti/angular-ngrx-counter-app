@@ -29,7 +29,7 @@ export class CustomIncrementComponent implements OnInit {
   OnIncrement() {
     this.store.dispatch(
       customIncrement({
-        value: +this.counterIncrement,
+        value: +this.counterIncrement | 0,
         action: this.actionType,
       })
     );
